@@ -8,7 +8,12 @@ public class DatabricksService {
     @Autowired
     private DatabricksRepository databricksRepository;
 
-    public String getName() {
-        return this.databricksRepository.getName();
+    public TestData getTestDataById(Integer id) {
+        return this.databricksRepository.getTestDataById(id);
     }
+
+    public TestData getTestDataByName(String name) {
+        return this.databricksRepository.getTestDataByName(name);
+    }
+
 }

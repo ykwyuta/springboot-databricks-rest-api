@@ -8,7 +8,11 @@ public class DatabricksRepository {
     @Autowired
     private DatabricksMapper databricksMapper;
 
-    public String getName() {
-        return this.databricksMapper.getName();
+    public TestData getTestDataById(Integer id) {
+        return this.databricksMapper.getTestDataById(id);
+    }
+
+    public TestData getTestDataByName(String name) {
+        return this.databricksMapper.getTestDataByName(name);
     }
 }
